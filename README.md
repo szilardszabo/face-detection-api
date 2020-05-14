@@ -20,25 +20,38 @@
 
 <div class="p-3"></div>
 
-<p>To detect faces, submit a JPG or PNG photo.  You can submit the photo either as a publicly accessible URL or Base64 encoded, eg. using a file field from a html form and post it.</p>
+<p>To detect faces, submit a JPG or PNG photo.  You can submit the photo either as a publicly accessible URL or Base64 encoded..</p>
 
 <p>One additional thing to note is that the returned coordinates all begin at the top left of the photo.</p>
 
 <h5 class="font-weight-bold pt-5 mb-0 pb-3">Required Parameters</h5>
 
-<p><br><code><span class="text-danger">image </span></code>Publicly accessible URL or Base64 encoded photo.<br></p>
+<p>
+
+<br>
+
+<code>
+    
+    <span class="text-danger">image </span>
+
+</code>
+
+Publicly accessible URL or Base64 encoded photo.<br>
+
+</p>
 
 <!--h5 class="font-weight-bold pt-5 mb-0 pb-3">Optional Parameters</h5-->
 
 <h6 class="font-weight-bold default-spacing text-uppercase">Example request</h6>
 
 <pre class="snippet"><code class=" hljs http"><span class="hljs-request">POST <span class="hljs-string">/detect</span> HTTP/1.1</span>
+
 <span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span>
-<span class="hljs-attribute">app_id</span>: <span class="hljs-string">4985f625</span>
-<span class="hljs-attribute">app_key</span>: <span class="hljs-string">aa9e5d2ec3b00306b2d9588c3a25d68e</span></code><code style="border-top:1px solid #3a3e4d;" class=" hljs json">{
-    "<span class="hljs-attribute">image</span>":<span class="hljs-value"><span class="hljs-string">" </span></span><a href="https://media.kairos.com/kairos-elizabeth.jpg"><span class="hljs-value"><span class="hljs-string">https://media.kairos.com/kairos-elizabeth.jpg</span></span></a><span class="hljs-value"><span class="hljs-string"> "</span></span>,
-    "<span class="hljs-attribute">selector</span>":<span class="hljs-value"><span class="hljs-string">"ROLL"</span>
-</span>}</code></pre>
+</code>
+
+<code style="border-top:1px solid #3a3e4d;" class=" hljs json">{
+    "<span class="hljs-attribute">image</span>":<span class="hljs-value"><span class="hljs-string">" </span></span><a href="https://www.randomlists.com/img/people/rachel_zoe.webp"><span class="hljs-value"><span class="hljs-string">https://www.randomlists.com/img/people/rachel_zoe.webp</span></span></a><span class="hljs-value"><span class="hljs-string"> "</span></span>,
+    "}</code></pre>
 
 <div class="p-3"></div>
 
@@ -51,7 +64,7 @@
             <span class="hljs-string">"status"</span>: <span class="hljs-string">"Complete"</span>,
             <span class="hljs-string">"width"</span>: <span class="hljs-number">1536</span>,
             <span class="hljs-string">"height"</span>: <span class="hljs-number">2048</span>,
-            <span class="hljs-string">"file"</span>: <span class="hljs-string">"kairos-elizabeth.jpg"</span>,
+            <span class="hljs-string">"file"</span>: <span class="hljs-string">"rachel_zoe.webp"</span>,
             <span class="hljs-string">"faces"</span>: [
                 {
                     <span class="hljs-string">"topLeftX"</span>: <span class="hljs-number">390</span>,
@@ -97,21 +110,3 @@
         <span class="hljs-string">"ErrCode"</span>: <span class="hljs-number">5002</span>
     }]
 }</code></pre>
-
-<!-- Init Request/Response -->
-
-<h6 class="font-weight-bold default-spacing text-uppercase">Request <em style="color: #e83f8b;text-transform: lowercase;font-size: 15px;font-weight: normal;">(includes "liveness" selector)</em></h6>
-
-<pre class="snippet"><code class=" hljs http">
-<span class="hljs-request">POST <span class="hljs-string">/detect</span> HTTP/1.1</span>
-<span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span>
-<span class="hljs-attribute">app_id</span>: <span class="hljs-string">4985f625</span>
-<span class="hljs-attribute">app_key</span>: <span class="hljs-string">aa9e5d2ec3b00306b2d9588c3a25d68e</span>
-</code>
-<code style="border-top:1px solid #3a3e4d;" class=" hljs json">
-{
-    "<span class="hljs-attribute">image</span>":<span class="hljs-value"><span class="hljs-string">"  </span></span><a href="https://media.kairos.com/kairos-elizabeth.jpg"><span class="hljs-value"><span class="hljs-string">https://media.kairos.com/kairos-elizabeth.jpg</span></span></a><span class="hljs-value"><span class="hljs-string">  "</span></span>,
-    "<span class="hljs-attribute">selector</span>":<span class="hljs-value"><span class="hljs-string">"ROLL, liveness"</span>
-</span>}
-</code>
-</pre>
