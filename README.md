@@ -38,9 +38,9 @@
 <span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span>
 </code>
 
-<code style="border-top:1px solid #3a3e4d;" class=" hljs json">{
-    "<span class="hljs-attribute">image</span>":<span class="hljs-value"><span class="hljs-string">" </span></span><a href="https://www.randomlists.com/img/people/rachel_zoe.webp"><span class="hljs-value"><span class="hljs-string">https://www.randomlists.com/img/people/rachel_zoe.webp</span></span></a><span class="hljs-value"><span class="hljs-string"> "</span></span>,
-    "}</code></pre>
+<code style="border-top:1px solid #3a3e4d;">{
+    "<span>image</span>":<span><span>" </span></span><a href="https://www.randomlists.com/img/people/rachel_zoe.webp"><span><span>https://www.randomlists.com/img/people/rachel_zoe.webp</span></span></a><span><span>"</span></span>
+}</code></pre>
 
 <div class="p-3"></div>
 
