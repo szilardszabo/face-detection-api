@@ -2,7 +2,7 @@
 
 <h3>Overview</h3>
 
-<p>The API detects human faces in photos and images and returns information on facial features as coordinates on the image it finds.</p>
+<p>This open source python API detects human faces in photos and images and returns information on facial features as coordinates on the image it finds.</p>
 
 <h3>Requests</h3>
 
