@@ -2,8 +2,8 @@
 
 <h3>Overview</h3>
 
-<p>This is an open source REST API written in Python and Flask.<br />
-    It can detect human faces in photos and images.<br /> 
+<p>This is an open source REST API written in Python and Flask. <br />
+    It can detect human faces in photos and images. <br /> 
     If it finds face(s) on image then it returns information with facial features as coordinates.
 </p>
 
@@ -14,18 +14,19 @@
 <p>All requests return a JSON object with the header:</p>
 
 <pre>
-<code class=" hljs http">
-<span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span>
+<code>
+<span>Content-Type</span>: <span>application/json</span>
 </code>
 </pre>
 
 <h4>POST /detect</h4>
 
-<div class="p-3"></div>
+<div></div>
 
-<p>To detect faces, submit a JPG or PNG photo.  You can submit the photo either as a publicly accessible URL or Base64 encoded..</p>
-
-<p>One additional thing to note is that the returned coordinates all begin at the top left of the photo.</p>
+<p>To detect faces, submit a JPG or PNG photo. <br />
+    You can submit the photo either as a publicly accessible URL or Base64 encoded. <br />
+    Returned coordinates all begin at the top left of the photo
+</p>
 
 <h5>Required Parameters</h5>
 
@@ -90,12 +91,4 @@
         }
     ]
 }
-+ <span class="hljs-built_in">Response</span> <span class="hljs-number">200</span> (application/json)
-    + Body
-{
-    <span class="hljs-string">"Errors"</span>: [
-    {
-        <span class="hljs-string">"Message"</span>: <span class="hljs-string">"no faces found in the image"</span>,
-        <span class="hljs-string">"ErrCode"</span>: <span class="hljs-number">5002</span>
-    }]
-}</code></pre>
+</code></pre>
