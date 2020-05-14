@@ -26,19 +26,7 @@
 
 <h5 class="font-weight-bold pt-5 mb-0 pb-3">Required Parameters</h5>
 
-<p>
-
-<br>
-
-<code>
-    
-    <span class="text-danger">image </span>
-
-</code>
-
-Publicly accessible URL or Base64 encoded photo.<br>
-
-</p>
+<p><br><code><span class="text-danger">image </span></code>Publicly accessible URL or Base64 encoded photo.<br></p>
 
 <!--h5 class="font-weight-bold pt-5 mb-0 pb-3">Optional Parameters</h5-->
 
@@ -46,6 +34,7 @@ Publicly accessible URL or Base64 encoded photo.<br>
 
 <pre class="snippet"><code class=" hljs http"><span class="hljs-request">POST <span class="hljs-string">/detect</span> HTTP/1.1</span>
 
+<code style="border-top:1px solid #3a3e4d;" class=" hljs json">
 <span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span>
 </code>
 
