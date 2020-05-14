@@ -26,7 +26,7 @@
 
 <h5>Required Parameters</h5>
 
-<p><br><code><span>image </span></code>Publicly accessible URL or Base64 encoded photo.<br></p>
+<p><code><span>image </span></code>Publicly accessible URL or Base64 encoded photo.<br></p>
 
 <!--h5 class="font-weight-bold pt-5 mb-0 pb-3">Optional Parameters</h5-->
 
