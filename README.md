@@ -2,11 +2,16 @@
 
 <h3>Overview</h3>
 
-<p>This open source python API detects human faces in photos and images and returns information on facial features as coordinates on the image it finds.</p>
+<p>This is an open source REST API written in Python and Flask.<br />
+    It can detect human faces in photos and images.<br /> 
+    If it finds face(s) on image then it returns information with facial features as coordinates.
+</p>
 
-<h3>Requests</h3>
+<h3>Usage</h3>
 
-<p>Requests return a JSON object with the header:</p>
+<h4>Requests</h4>
+
+<p>All requests return a JSON object with the header:</p>
 
 <pre>
 <code class=" hljs http">
@@ -14,9 +19,7 @@
 </code>
 </pre>
 
-<h3>Usage</h3>
-
-<h3 id="post-detect" class="font-weight-bold">POST /detect</h3>
+<h4>POST /detect</h4>
 
 <div class="p-3"></div>
 
@@ -36,7 +39,7 @@
 
 <span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span>
 {
-    "<span>image</span>":<span><span>" </span></span><a href="https://www.randomlists.com/img/people/rachel_zoe.webp"><span><span>https://www.randomlists.com/img/people/rachel_zoe.webp</span></span></a><span><span>"</span></span>
+    "<span>image</span>":<span><span>" </span></span><a href="https://randomuser.me/api/portraits/women/75.jpg"><span><span>https://randomuser.me/api/portraits/women/75.jpg</span></span></a><span><span>"</span></span>
 }</code></pre>
 
 <div class="p-3"></div>
@@ -50,7 +53,7 @@
             <span class="hljs-string">"status"</span>: <span class="hljs-string">"Complete"</span>,
             <span class="hljs-string">"width"</span>: <span class="hljs-number">1536</span>,
             <span class="hljs-string">"height"</span>: <span class="hljs-number">2048</span>,
-            <span class="hljs-string">"file"</span>: <span class="hljs-string">"rachel_zoe.webp"</span>,
+            <span class="hljs-string">"file"</span>: <span class="hljs-string">"75.jpg"</span>,
             <span class="hljs-string">"faces"</span>: [
                 {
                     <span class="hljs-string">"topLeftX"</span>: <span class="hljs-number">390</span>,
